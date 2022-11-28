@@ -1,0 +1,31 @@
+{
+    "name": "michaelmannucci/coolor",
+    "description": "A Statamic modifier manipulates the hue, saturation, and/or luminance of any given color.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Mannucci",
+            "email": "contact@michaelmannucci.com",
+            "homepage": "https://michaelmannucci.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Michaelmannucci\\Coolor\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Coolor",
+            "description": "A Statamic modifier manipulates the hue, saturation, and/or luminance of any given color."
+        },
+        "laravel": {
+            "providers": [
+                "Michaelmannucci\\Coolor\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "mexitek/phpcolors": "dev-master"
+    }
+}
